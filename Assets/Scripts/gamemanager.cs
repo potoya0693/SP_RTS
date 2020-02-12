@@ -9,5 +9,6 @@ public class gamemanager : MonoBehaviour
         PlayerPrefs.SetInt("Gold", 500);
         PlayerPrefs.SetInt("Lumber", 100);
         PlayerPrefs.SetInt("Food", 100);
+        PlayerPrefs.SetInt("Unit", 1);
     }
 }

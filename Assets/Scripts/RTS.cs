@@ -19,7 +19,7 @@ namespace RTS
         public color color; //This might be redundant.
         public int lumber = 100;
         public int gold = 500;
-        public int unitCount = 0;
+        public int unitCount = 1;
         public int maxUnitCount = 5;
     }
 
