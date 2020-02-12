@@ -6,9 +6,11 @@ using RTS;
 public class PlayerInspector : MonoBehaviour
 {
     public Faction faction;
+    public List<GameObject> currentSelection;
     // Start is called before the first frame update
-    void Start()
+    void LateUpdate()
     {
         Player.faction = faction;
+        currentSelection = Player.groups.GetGroup(0);
     }
 }

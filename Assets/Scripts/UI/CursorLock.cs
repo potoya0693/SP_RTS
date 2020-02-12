@@ -2,22 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickMe : MonoBehaviour
+public class CursorLock : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Kek");
-    }
-
-    private void OnMouseDown()
-    {
-        Debug.Log("Click");
     }
 }
