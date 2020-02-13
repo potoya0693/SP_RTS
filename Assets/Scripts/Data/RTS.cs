@@ -35,6 +35,17 @@ namespace RTS
             }
         }
 
+        public void SendMessages(string message, object o = null)
+        {
+            foreach(GameObject i in _currentSelection)
+            {
+                if (o != null)
+                    i.SendMessage(message, o);
+                else
+                    i.SendMessage(message);
+            }
+        }
+
         public void AddtoGroup(List<GameObject> from, List<GameObject> to)
         {
             int count = 0;

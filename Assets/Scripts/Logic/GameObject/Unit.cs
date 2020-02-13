@@ -31,6 +31,8 @@ namespace RTS
             }
         }
 
+        
+
         public void TakeDamage(int value)
         {
             _health -= value;
